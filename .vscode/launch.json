@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "Client",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "Server",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
             "name": "HeikinCKadai",
             "request": "launch",
             "mainClass": "HeikinCKadai",
