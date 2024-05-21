@@ -30,8 +30,7 @@ class RenshuTest {
     void testSumFromArrayIndex() {
         int[] a = { 1, 2, 3, 4, 5 };
         assertEquals(12, renshu.sumFromArrayIndex(a, 2));
-        asser
-        tEquals(15, renshu.sumFromArrayIndex(a, 0));
+        assertEquals(15, renshu.sumFromArrayIndex(a, 0));
         assertEquals(-1, renshu.sumFromArrayIndex(a, 5)); // assuming -1 for invalid index
     }
 

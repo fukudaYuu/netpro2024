@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SieveOfEratosthenes",
+            "request": "launch",
+            "mainClass": "SieveOfEratosthenes",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "TaskClientOnce",
+            "request": "launch",
+            "mainClass": "TaskClientOnce",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "TaskServerOnce",
+            "request": "launch",
+            "mainClass": "TaskServerOnce",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
             "name": "DinnerFullCource",
             "request": "launch",
             "mainClass": "DinnerFullCource",
