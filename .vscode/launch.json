@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "kadai_UDPClient",
+            "request": "launch",
+            "mainClass": "basic.kadai_UDPClient",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "kadai_UDPServer",
+            "request": "launch",
+            "mainClass": "basic.kadai_UDPServer",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "CountAZTenRunnable",
+            "request": "launch",
+            "mainClass": "basic.CountAZTenRunnable",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "kadai_MulticastServer",
+            "request": "launch",
+            "mainClass": "basic.kadai_MulticastServer",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "UDPMulticastClient",
+            "request": "launch",
+            "mainClass": "basic.UDPMulticastClient",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "UDPMulticastServer",
+            "request": "launch",
+            "mainClass": "basic.UDPMulticastServer",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "kadai_MulticastClient",
+            "request": "launch",
+            "mainClass": "basic.kadai_MulticastClient",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "A_UDPClient",
+            "request": "launch",
+            "mainClass": "basic.A_UDPClient",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "A_UDPServer",
+            "request": "launch",
+            "mainClass": "basic.A_UDPServer",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "A_UDPClient",
+            "request": "launch",
+            "mainClass": "A_UDPClient",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
             "name": "SieveOfEratosthenes",
             "request": "launch",
             "mainClass": "SieveOfEratosthenes",

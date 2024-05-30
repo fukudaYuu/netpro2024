@@ -1,3 +1,4 @@
+package task;
 import java.io.Serializable;
 
 interface ITask{

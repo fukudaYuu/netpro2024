@@ -1,3 +1,4 @@
+package task;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.BindException;
@@ -35,7 +36,7 @@ public class TaskClientOnce {
             if (replayNumber == 0) {
                 System.out.println(n + "は素数ではありません。");
             } else {
-                System.out.println(replayNumber);
+                System.out.println(n + "以下の最大素数は" + replayNumber + "です。");
             }
 
             ois.close();
