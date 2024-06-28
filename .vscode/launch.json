@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OthelloBoard",
+            "request": "launch",
+            "mainClass": "OthelloBoard",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "FacesAWTMain",
+            "request": "launch",
+            "mainClass": "FacesAWTMain",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "Kuku",
+            "request": "launch",
+            "mainClass": "Kuku",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "SevenTeenOdd",
+            "request": "launch",
+            "mainClass": "q1.SevenTeenOdd",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
+            "name": "SevenTeenOdd",
+            "request": "launch",
+            "mainClass": "SevenTeenOdd",
+            "projectName": "netpro2024_45f7bc4f"
+        },
+        {
+            "type": "java",
             "name": "kadai_UDPClient",
             "request": "launch",
             "mainClass": "basic.kadai_UDPClient",

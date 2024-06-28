@@ -1,3 +1,8 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "socket-3/src",
+        "mid_exam/src/netpro2024/mid_exam/q1",
+        "mid/src/netpro2024/mid_exam/q1"
+    ]
 }
