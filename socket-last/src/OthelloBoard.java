@@ -21,17 +21,17 @@ public class OthelloBoard {
 
 	class BoardFrame extends Frame {
 		public static int board[][] = new int[8][8];
-		private int w;
-		private int h;
-		private int xStart;
-		private int yStart;
+		// private int w;
+		// private int h;
+		// private int xStart;
+		// private int yStart;
 		private int n;
 		
 		public void paint(Graphics g) {
-			w = 200;
-			h = 200;
-			xStart = 50;
-			yStart = 50;
+			// w = 200;
+			// h = 200;
+			// xStart = 50;
+			// yStart = 50;
 			n = 0;
 
 			frameWork(g);
