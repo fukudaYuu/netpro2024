@@ -12,11 +12,11 @@ public class Question implements Serializable {
         this.question = question;
     }
 
-    public String getAnser() {
+    public String getAnswer() {
         return answer;
     }
 
-    public void setAnser(String answer) {
+    public void setAnswer(String answer) {
         this.answer = answer;
     }
 }

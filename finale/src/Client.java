@@ -1,61 +1,47 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.BindException;
 import java.net.Socket; //ネットワーク関連のパッケージを利用する
-import java.util.Scanner;
 
 public class Client {
-
     TicTacToe t;
-    Action a;
 
     public Client(TicTacToe t) {
         this.t = t;
     }
 
-    public Client(Action a) {
-        this.a = a;
-    }
-
     public static void main(String arg[]) {
         try {
             TicTacToe t = new TicTacToe(false);
-            Action a = new Action(t);
+            /* 通信の準備をする */
+			BufferedReader reader =		//キーボードから接続するサーバ名を読み込む
+            new BufferedReader(new InputStreamReader(System.in));
+            System.out.print("サーバーネームを入力してください。(localhost or 133.27.....)? >");
+            String serverName = reader.readLine();
+            Socket socket =			//指定されたサーバの5000番ポートに接続を要求する
+            new Socket(serverName, 5002);
 
-            Socket socket = new Socket("localhost", 500);
-            System.out.println("接続されました");
-
-            ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
-            ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
-            
-            if(!a.checkStart()) {
-                Question que = (Question) ois.readObject();
-                String msgAnswer = que.getQuestion();
-                System.out.println("答え：" + msgAnswer);
-            }
-            Scanner scanner = new Scanner(System.in);
             System.out.println("質問を入力してください。");
-            String question = scanner.next();
-            scanner.close();
+            String question = reader.readLine();
+            
+            ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
 
             Question q = new Question();
             q.setQuestion(question);
-
             oos.writeObject(q);
             oos.flush();
 
-            new Thread(() -> {
-                try {
-                    while (true) {
-                        int index = ois.readInt();
-                        String mark = ois.readUTF();
-                        a.changeMark(index, mark);
-                        a.winCheck();
-                    }
-                } catch (Exception e) {
-                    throw new RuntimeException(e);
-                }
-            }).start();
+            ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
+            
+            Question que = (Question) ois.readObject();
+            String msgAnswer = que.getAnswer();
+            System.out.println("答え：" + msgAnswer);
+
+            
+            ois.close();
+            oos.close();
             socket.close();
         } // エラーが発生したらエラーメッセージを表示してプログラムを終了する
         catch (BindException be) {
